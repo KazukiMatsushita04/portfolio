@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kazuki Matsushita</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--ヘッダー-->
+    <header>
+      <!--メニューバー-->
+      <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+
+      <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+          <ul>
+            <li><a href="#" class="menu_aboutme">About Me</a></li>
+            <li><a href="#" class="menu_service">Service</a></li>
+            <li><a href="#" class="menu_works">Works</a></li>
+            <li><a href="#" class="menu_contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="top-image">
+      <div class="container-top">
+        <div class="box">
+          <h1 class="top-text myname">Welcome to<br />My Portfolio</h1>
+          <p class="worker_type">- Kazuki Matsushita -</p>
+        </div>
+      </div>
+      <canvas class="background"></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    </div>
+
+    <div class="main_content">
+      <!-- 自己紹介 -->
+      <div class="profile_section">
+        <div class="portfolio_title profile_title animated fadein">
+          <span
+            class="glyphicon glyphicon-user"
+            style="letter-spacing: 5px"
+          ></span>
+          <p>About Me</p>
+        </div>
+
+        <div class="profile_image flexbox1 animated fadein">
+          <img src="./image/my_profile.jpg" alt="myprofile" />
+        </div>
+
+        <div class="sub_title animated fadein">
+          <p>Introduction</p>
+        </div>
+        <div class="introduction_text animated fadein">
+          <p>
+            初めまして。Webエンジニアの<span style="font-weight: bold"
+              >松下和樹</span
+            >と申します。<br /><br />
+            現在フロントエンドを中心に、Webサイト制作およびWebアプリケーションの開発を行なっております。<br /><br />
+            「<span style="font-weight: bold; color: #ff0000">質</span
+            >」と「<span style="font-weight: bold; color: #ff0000"
+              >スピード</span
+            >」を重視することで、期待を超えることをお約束します。<br /><br />
+            また、クライアント様に寄り添った<span
+              style="font-weight: bold; color: #ff0000"
+              >丁寧なコミュニケーション</span
+            >を常に心がけ、<br /><br />
+            <span style="font-weight: bold; color: #ff0000"
+              >集客や売り上げアップを意識して</span
+            >、仕事に取り組ませていただきます。
+          </p>
+        </div>
+      </div>
+      <!-- スキル紹介 -->
+      <div class="skill_section">
+        <div class="portfolio_title skill_title">
+          <span
+            class="glyphicon glyphicon-cog"
+            style="letter-spacing: 5px"
+          ></span>
+          <p>Skills</p>
+        </div>
+
+        <div class="introduction_text animated fadein">
+          <div class="skill skill-icon">
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill skill-icon">
+            <i class="fab fa-css3"></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill skill-icon">
+            <i class="fab fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill skill-icon">
+            <i class="fab fa-wordpress"></i>
+            <p>WordPress</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- サービス紹介 -->
+      <div class="service_section">
+        <div class="portfolio_title skill_title">
+          <span
+            class="glyphicon glyphicon-globe"
+            style="letter-spacing: 5px"
+          ></span>
+          <p>Service</p>
+        </div>
+
+        <div class="animated fadein">
+          <div class="service_item">
+            <div class="skill service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="sub_title">
+              <p>コーディング</p>
+            </div>
+
+            <div class="service_content">
+              LPやコーポレートサイト、ブログなど、
+              目的に応じた適切なコーディングを行います(レスポンシブ対応可)。また、既存サイトのリニューアル・修正など細かい作業にも喜んで対応いたします。<br /><br />
+              【料金目安】<br />
+              コード修正: ¥10,000~/1p<br />
+              LP制作: ¥20,000~/1p
+            </div>
+          </div>
+
+          <div class="service_item">
+            <div class="skill service-icon">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <div class="sub_title">
+              <p>Webデザイン</p>
+            </div>
+            <div class="service_content">
+              ヒアリングにより、ご要望に沿ったデザインを的確に把握し作成致します。
+              LPO対策を重要視したコンバージョン率を高める設計を行い、ご期待を超えるWebサイトを提供します。<br /><br />
+              【料金目安】<br />
+              LP制作: ¥30,000~/1p<br />
+              コーポレートサイト (10p以下): ¥80,000~
+            </div>
+          </div>
+
+          <div class="service_item">
+            <div class="skill service-icon">
+              <i class="fab fa-wordpress"></i>
+            </div>
+            <div class="sub_title">
+              <p>Wordpress</p>
+            </div>
+            <div class="service_content">
+              コーポレートサイトや個人ブログなどのWordPressサイトの構築や既存サイトのWordPress移行、コードの修正に対応しております。
+              また、Webサイトの保守・管理も対応いたします。
+              <br /><br />
+              【料金目安】<br />
+              Wordpress移行: ¥100,000~<br />
+              Wordpress制作: ¥200,000~
+            </div>
+          </div>
+          <p class="service_message" style="font-size: 18px">
+            ※正式なお見積もりは、別途ご相談させていただきます。
+          </p>
+        </div>
+      </div>
+
+      <!--Webサイト ポートフォリオ-->
+      <div class="portfolio_section">
+        <div class="portfolio_title works_title">
+          <span
+            class="glyphicon glyphicon-list-alt"
+            style="letter-spacing: 5px"
+          ></span>
+          <p>Works</p>
+        </div>
+
+        <div class="animated fadein">
+          <a
+            href="https://kazukimatsushita04.github.io/my_portfolio/"
+            class="portfolio_link"
+          >
+            <div class="portfolio">
+              <img src="./image/my_portfolio.png" alt="portfolio" />
+              <div class="mask1"></div>
+              <div class="mask2"></div>
+              <div class="caption">
+                <p>
+                  【Category】オリジナル作品<br /><br />
+                  【Title】My Portfolio<br /><br />
+                  【Skill】HTML / CSS / JQuery<br /><br />
+                  【Detail】私のことを知ってもらうためのサイトです。
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://mtt-blog.com/" class="portfolio_link">
+            <div class="portfolio">
+              <img src="./image/my_blog.png" alt="portfolio" />
+              <div class="mask1"></div>
+              <div class="mask2"></div>
+              <div class="caption">
+                <p>
+                  【Category】オリジナル作品<br /><br />
+                  【Title】まつつぶろぐ<br /><br />
+                  【Skill】WordPress<br /><br />
+                  【Detail】WordPressテーマ「Snow Monkey」を使って<br />ブログを運営しています。
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <div class="portfolio_voice">
+            <img src="./image/customer-voice.png" alt="portfolio" />
+            <div class="mask1"></div>
+            <div class="mask2"></div>
+            <div class="caption">
+              <p>
+                - お客様の声 - <br /><br />
+                クラウドワークスでLP作成・WordPress作成など<br />様々な案件に対応させていただきました。<br />たくさんのクライアント様にありがたい声をいただいております。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="portfolio_title contact_title">
+          <span
+            class="glyphicon glyphicon-envelope"
+            style="letter-spacing: 5px"
+          ></span>
+          <p>Contact</p>
+        </div>
+        <div class="contact_text">
+          ご依頼（ご相談）はメールよりお願い致します
+        </div>
+        <!--SNSアイコン-->
+        <div>
+          <ul class="follow-me">
+            <li>
+              <a
+                href="mailto:kazuki.matsushita.fs@gmail.com?body=ご依頼/ご相談内容"
+                class="gmail"
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/matsumatsu04" class="twitter"></a>
+            </li>
+            <li>
+              <a href="https://mtt-blog.com/" class="blog"></a>
+            </li>
+          </ul>
+        </div>
+        <!--コピーライト-->
+        <div id="copyright">
+          Copyright &copy; 2021 Kazuki Matsushita's Protfolio All Rights
+          Reserved.
+        </div>
+      </footer>
+    </div>
+    <script src="vendor/jquery-2.2.4.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/jquery.waypoints.min.js"></script>
+    <script src="vendor/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/mobile-detect.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+  </body>
+</html>
